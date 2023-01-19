@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { HTTPRequestMethods, tAPIRequest, tAPIResponseError, tAPIResponseSuccess } from 'shared-types';
-import { APIError, isAPIError } from '../../../utils/apiError';
+import { HTTPRequestMethods, tAPIRequest, tAPIResponseError, tAPIResponseSuccess } from '../../../src/utils/apiTypes';
+import { APIError, isAPIError } from '../../../src/utils/apiError';
 
 const SUPPORTED_HTTP_METHODS: HTTPRequestMethods[] = ['POST'];
 

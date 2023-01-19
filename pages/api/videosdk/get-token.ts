@@ -1,11 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { HTTPRequestMethods, tAPIRequest, tAPIResponseError, tAPIResponseSuccess } from 'shared-types';
-import { APIError, isAPIError } from '../../../utils/apiError';
+import { HTTPRequestMethods, tAPIRequest, tAPIResponseError, tAPIResponseSuccess } from '../../../src/utils/apiTypes';
+import { APIError, isAPIError } from '../../../src/utils/apiError';
 import jwt, { SignOptions } from 'jsonwebtoken';
 import { 
 	VIDEOSDK_API_KEY,
 	VIDEOSDK_SECRET
-} from '../../../config/env.config'
+} from '../../../src/utils/env.config'
 
 const SUPPORTED_HTTP_METHODS: HTTPRequestMethods[] = ['GET'];
 
