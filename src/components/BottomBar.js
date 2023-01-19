@@ -190,6 +190,7 @@ export function BottomBar({
         >
           {micArr.map(({ deviceId, label }, index) => (
             <Box
+              key={index}
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -659,9 +660,10 @@ export function BottomBar({
         style={{ paddingBottom: "100px" }}
       >
         <Grid container className="bg-gray-800 py-6">
-          {otherFeatures.map(({ icon }) => {
+          {otherFeatures.map(({ icon }, index) => {
             return (
               <Grid
+                key={index}
                 className="flex items-center justify-center"
                 item
                 xs={icon === BottomBarButtonTypes.MEETING_ID_COPY ? 7 : 4}
